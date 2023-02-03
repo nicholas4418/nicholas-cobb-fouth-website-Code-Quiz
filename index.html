@@ -12,17 +12,42 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <div class="page-links">
-                    <li><a id="main" href="#main">Main Page</a></li>
-                    <li><a id="highscores" href="#highscores">Highscores</a></li>
-                </div>
-                <li>Time Left: <span id="countdown">0</span></li>
-            </ul>
-            
-
+            <a href="hs.html">Highscores</a>
+    
         </nav>
     </header>
+            
+    <main>
+        <section id="start" class="quiz-section">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code-related questions within the time limit. <br>
+                Keep in mind that inccorect answers will penalize your score/time <br>
+                by ten seconds!
+            </p>
+            <button id="start-button">Start Quiz</button>
+        </section>
+        <section id="questions" class="hidden questions">
+            <p id="countdown">Time: <span id="seconds-remaining">0</span></p>
+            <h1 id="question">Question</h1>
+            <ul id="answers"></ul>
+        </section>
+        <section id="final" class="hidden quiz">
+            <h1 id="end">Quiz Completed</h1>
+            <p id="display-score">Your final score is: <span id="score">0</span></p>
+            <form id="submit-initials">
+                <label for="initials">Enter Initials: </label>
+                <input type="text" id="initials-input">
+                <button type="submit">Submit</button>
+                <p id="error"></p>
+            </form>
+            <a href="index.html" class="back-button">Back to Quiz</a>
+        </section>
+        <div>
+            <p id="right" class="results hidden">Correct!</p>
+            <p id="wrong" class="results hidden">Wrong!</p>
+        </div>
+    </main>
 
     <script src="./assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/6fbd474c58.js" crossorigin="anonymous"></script>
