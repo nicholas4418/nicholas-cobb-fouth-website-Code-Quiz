@@ -12,12 +12,13 @@
 <body>
     <header>
         <nav>
+            <!--Nav link to the high score page-->
             <a href="hs.html">View High Scores</a>
-    
         </nav>
     </header>
-            
+
     <main>
+        <!--Start of Quiz-->
         <section id="start" class="quiz">
             <h1>Coding Quiz Challenge</h1>
             <p>
@@ -27,11 +28,13 @@
             </p>
             <button id="start-button">Start Quiz</button>
         </section>
+        <!--Question Section of Quiz-->
         <section id="questions-section" class="hidden quiz">
             <p id="countdown">Time: <span id="seconds-remaining">0</span></p>
             <h1 id="question">Question</h1>
             <ul id="answers"></ul>
         </section>
+        <!--End Section of Quiz-->
         <section id="final" class="hidden quiz">
             <h1 id="end">Quiz Completed</h1>
             <p id="display-score">Your final score is: <span id="score">0</span></p>
@@ -39,10 +42,12 @@
                 <label for="initials">Enter Initials: </label>
                 <input type="text" id="initials-input">
                 <button type="submit">Submit</button>
-                <p id="error"></p>
+                <p id="error-text"></p>
             </form>
-            <a href="index.html" class="back-button">Back to Quiz</a>
+            <!--Back Button at the end of quiz-->
+            <a href="index.html" class="back-button">Return to Start</a>
         </section>
+        <!--Hidden results of selected answers-->
         <div>
             <p id="right" class="results hidden">Correct!</p>
             <p id="wrong" class="results hidden">Wrong!</p>
@@ -50,7 +55,9 @@
     </main>
 
     <script src="./assets/js/script.js"></script>
+    <!--Font Awesome API-->
     <script src="https://kit.fontawesome.com/6fbd474c58.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
