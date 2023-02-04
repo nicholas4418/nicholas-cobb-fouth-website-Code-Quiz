@@ -145,7 +145,7 @@ h1 {
   }
   
   
-  #quiz-questions, 
+  #questions-section, 
   #end {
     border-bottom: 1px solid var(--secondary-color);
     padding-bottom: 15px;
@@ -220,7 +220,7 @@ h1 {
     margin-bottom: 50px;
   }
   
-  /*****Breakpoints*****/
+  
   @media only screen and (min-width: 992px) {
     main {
       width: 60%;
